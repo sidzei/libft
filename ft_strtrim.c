@@ -6,13 +6,13 @@
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 20:15:05 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/11 19:10:50 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/16 15:31:29 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	trimmer(char c, char const *set)
+static int	trimmer(char c, char const *set)
 {
 	while (*set)
 	{
@@ -25,9 +25,9 @@ static	trimmer(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	const char *trimmed;
-	size_t start;
-	size_t end;
+	const char	*trimmed;
+	size_t		start;
+	size_t		end;
 
 	start = 0;
 	end = ft_strlen(s1);

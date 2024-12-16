@@ -6,7 +6,7 @@
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:08:02 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/10 17:20:55 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/16 15:27:33 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t				l;
+	size_t			l;
 	unsigned char	*l1;
 	unsigned char	*l2;
 
