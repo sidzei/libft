@@ -6,7 +6,7 @@
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 19:33:54 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 19:41:16 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/16 19:59:28 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	while (s[i++])
+	while (s[i])
 	{
 		write(fd, &s[i], 1);
+		i++;
 	}
 }
