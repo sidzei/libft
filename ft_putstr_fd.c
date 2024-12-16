@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/16 19:03:22 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 19:31:53 by sjesione         ###   ########.fr       */
+/*   Created: 2024/12/16 19:33:54 by sjesione          #+#    #+#             */
+/*   Updated: 2024/12/16 19:41:16 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
 	i = 0;
 	while (s[i++])
 	{
-		f(i, &s[i]);
+		write(fd, &s[i], 1);
 	}
 }
