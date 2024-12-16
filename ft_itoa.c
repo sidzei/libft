@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/16 16:32:15 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 18:31:26 by sjesione         ###   ########.fr       */
+/*   Created: 2024/12/16 18:40:07 by sjesione          #+#    #+#             */
+/*   Updated: 2024/12/16 18:41:55 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ char	*ft_itoa(int n)
 	int		count;
 
 	val = 0;
-	count = counter(n);
 	if (n < 0)
 		val = 1;
+	count = counter(n) + val;
 	number = (char *)ft_calloc(count + 1, sizeof(char));
 	if (!number)
 		return (number);
