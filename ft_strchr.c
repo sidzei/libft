@@ -6,13 +6,14 @@
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:08:20 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/10 17:20:11 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/16 16:10:40 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
+
 {
 	while (*s++)
 	{

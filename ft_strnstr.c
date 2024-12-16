@@ -6,7 +6,7 @@
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:08:42 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/10 17:19:28 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/16 15:40:18 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

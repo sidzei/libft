@@ -6,7 +6,7 @@
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 16:54:41 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/10 20:14:48 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/16 15:40:12 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*ptr;
 	size_t	i;
 
-	if (len > ft_strlen(s))
+	if (len > (size_t)ft_strlen((char *)s))
 		return (NULL);
-	if (start >= ft_strlen(s))
+	if (start >= (unsigned int)ft_strlen((char *)s))
 		return (NULL);
 	ptr = ft_calloc(sizeof(char), len);
 	if (ptr == NULL)

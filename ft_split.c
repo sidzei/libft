@@ -6,7 +6,7 @@
 /*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 13:08:55 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 15:27:19 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/16 15:40:39 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,6 @@ static int	count_words(char const *s, char c)
 static char	*extract_word(char const *s, int start, int end)
 {
 	return (ft_substr(s, start, end - start));
-}
-
-static void	free_all(char **result, int count)
-{
-	while (count >= 0)
-		free(result[count--]);
-	free(result);
 }
 
 char	**ft_split(char const *s, char c)
