@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
+/*   By: sjesione <sjesione@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:08:20 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 16:10:40 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/20 15:04:15 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,11 @@
 char	*ft_strchr(const char *s, int c)
 
 {
-	while (*s++)
+	while (*s && *s != (char)c)
+		s++;
+	if (*s == (char)c)
 	{
-		if (*s == c)
-		{
-			return ((char *)s);
-		}
+		return ((char *)s);
 	}
 	return ('\0');
 }

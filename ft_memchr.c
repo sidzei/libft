@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
+/*   By: sjesione <sjesione@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:07:58 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 18:31:36 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/20 14:56:37 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*p;
+	char	*p;
 
-	p = (unsigned char *)s;
-	if (n == 0)
-		return (NULL);
+	p = (char *)s;
 	while (n--)
 	{
 		if (*p == c)

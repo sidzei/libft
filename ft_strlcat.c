@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
+/*   By: sjesione <sjesione@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:08:24 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/10 17:19:56 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/20 15:13:03 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 
 	i = 0;
 	k = 0;
+	if(size == 0)
+		return (0);
 	while (dest[i])
 		i++;
 	while (src[k])

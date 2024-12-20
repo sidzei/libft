@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
+/*   By: sjesione <sjesione@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:08:16 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 16:10:10 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/20 14:48:12 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 void	*ft_memset(void *ptr, int val, size_t n)
 {
-	unsigned char	*c;
+	char	*c;
+	int i;
 
-	if (!ptr)
-		return (NULL);
-	c = (unsigned char *)ptr;
+	i = 0;
+	c = (char *)ptr;
 	while (n--)
 	{
-		*c++ = val;
+		c[i] = val;
+		i++;
 	}
 	return (c);
 }

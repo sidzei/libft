@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sjesione < sjesione@student.42warsaw.pl    +#+  +:+       +#+        */
+/*   By: sjesione <sjesione@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 13:08:08 by sjesione          #+#    #+#             */
-/*   Updated: 2024/12/16 16:00:21 by sjesione         ###   ########.fr       */
+/*   Updated: 2024/12/20 14:50:37 by sjesione         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*c;
-	unsigned char	*cd;
+	char	*c;
+	char	*cd;
+	int i;
 
+	i = 0;
 	if (!dest && !src)
 		return (NULL);
-	c = (unsigned char *)src;
-	cd = (unsigned char *)dest;
+	c = (char *)src;
+	cd = (char *)dest;
 	while (n--)
 	{
-		*cd++ = *c++;
+		cd[i] = c[i];
+		i++;
 	}
 	return (cd);
 }
